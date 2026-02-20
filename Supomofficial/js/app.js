@@ -392,7 +392,9 @@ function renderVideoPagamento() {
     </div>
   </div></div>`;
   setTimeout(() => { const b = document.getElementById('sacarBtn2'); if (b) { b.style.display = 'block'; b.style.animation = 'slideUp .5s ease-out'; } }, 150000);
-  document.getElementById('sacarBtn2').onclick = () => navigate('/checkout');
+  document.getElementById('sacarBtn2').onclick = () => {
+  window.location.href = "https://zenopayment.com/p/cupomdavez";
+};
 }
 
 // ===== CHECKOUT =====
@@ -452,3 +454,4 @@ function handleRoute() {
 }
 window.addEventListener('hashchange', handleRoute);
 document.addEventListener('DOMContentLoaded', handleRoute);
+
